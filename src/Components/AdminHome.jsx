@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 
+
 function AdminHome() {
   const [solicitudes, setSolicitudes] =useState ([]);
 

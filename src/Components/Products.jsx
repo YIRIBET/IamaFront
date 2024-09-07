@@ -60,7 +60,7 @@ function Product() {
         newName: product.name || "",
         newDescription: product.description || "",
         categoryId: product.categoryBean?.id || "",
-        departmentId: product.departmentBeans?.[0]?.id || "",
+        departmentId: product.departmentBean?.[0]?.id || "",
         reason: product.reason || "" // Initialize or update reason if needed
       });
     }
@@ -213,9 +213,7 @@ function Product() {
                 <td className="px-6 py-4">{product.description}</td>
                 <td className="px-6 py-4">{product.categoryBean.categoryName}</td>
                 <td className="px-6 py-4">
-                  {product.departmentBeans.map((department) => (
-                    <div key={department.id}>{department.name}</div>
-                  ))}
+                {product.departmentBean.name}
                 </td>
                 <td className="px-6 py-4">
                   <button
